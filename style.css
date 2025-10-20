@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: #b6b5b5;
+
+}
+header{
+    height: 100px;
+    background-color: #0b2650;
+    position: sticky;
+    color: white;
+    border-bottom: solid 3px #c29639;
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    z-index: 2;
+    align-items: center;
+}
+header > * {
+    margin: 0px 10px;
+}
+.times{
+    font-family: 'Times New Roman', Times, serif;}
+header img{
+    height: 100px;
+}
+header a img{
+    height: 50px;
+}
+section{
+    display: flex;
+align-items: center;
+    color: white; 
+    flex-direction: column;
+    margin: 0 25px;
+}
+section > * {
+    margin: 20px 25px;
+}
+section h1{
+    font-size: 22px; 
+    font-weight: 500;
+  font-family: "PT Serif", serif;
+}
+section p {
+ font-family: "Chivo", sans-serif;
+    font-size: smaller;
+    font-weight: 300;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#texto {
+    font-size: 25px;
+    color: #223452;
+    text-align: center;
+    font-weight: bold;
+}
+.bloco{
+    height: fit-content;
+    text-align: center;
+    background-color: rgb(139, 108, 63);
+    width: 100%;
+    padding: 5px 5px;
+    border: 2px dashed rgb(116, 91, 53) ;
+}
+.botao{
+    height: fit-content;
+    background-color: #223452;
+    width: fit-content;
+    border: 2px solid #0b2650;
+    padding: 10px 19px;
+    transition: all 0.2s ease-in-out;
+    font-family: chivo;
+}
+.botao:hover{
+    height: fit-content;
+    background-color: #223452;
+    width: fit-content;
+    border: 2px solid #c29639;
+    padding: 10px 19px;
+}
+footer{
+    height: 100px;
+    background-color: #0b2650;
+    color: white;
+    border-top: solid 3px #c29639;
+    margin-top: 75px;
+}
+#livro{
+    margin: 0px;
+}
+#citacao{
+    color:#223452
+
+}
+#citacao blockquote p{
+    font-weight: normal;
+    text-align: left;
+}
+#citacao p{
+    text-align: right;
+    font-weight: bold;
+}
+.terror > *, .romance > *, .fantasia > *{
+    margin: 0;
+}
+.terror, .romance, .fantasia {
+    gap: 15px;
+}
+.terror{
+    background-color: black;
+    background-size: cover;
+    background-image: url(fundoterror.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    height: 40dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terror .botao{
+    border: 2px solid rgb(48, 48, 48);
+    background-color: black;
+}
+.terror .botao:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+}
+section h2{
+    font-weight: 100;
+    text-align: center;
+    
+}
+.romance{
+    background-color: rgb(114, 4, 4);
+    background-size: cover;
+    background-image: url(fundoromance.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    height: 40dvh;
+    background-position: 50% 10dvh;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.romance .botao{
+    border: 2px solid rgb(50, 0, 0);
+    background-color: rgb(114, 4, 4);
+}
+.romance .botao:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(114, 4, 4);
+}
+.fantasia{
+    background-color: rgb(30, 85, 22);
+    background-size: 100%;
+    background-image: url(fundofantasia.png);
+        background-position: 50% 10dvh;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 40dvh;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fantasia .botao{
+    border: 2px solid rgb(13, 34, 10);
+    background-color: rgb(30, 85, 22);
+}
+.fantasia .botao:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(30, 85, 22);
+}
+.livro{
+    width: 90dvw;
+    height: 75dvh;
+    border: 4px solid #c29639;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-position: center;
+}
+
+.terrorFull{
+    background-color: black;
+    margin:0;
+    background-image: url(fundoFullTerror.png);
+    background-size: 150%;
+}
+
+.terrorFull h1{
+    font-size: xx-large;
+    font-weight: 100;
+}
+.terrorFull p {
+    padding: 10px 10px;
+    text-align: justify;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+.terrorFull section{
+    margin: 20px 15px;
+    margin-top: 0;
+}
+.terrorFull section:first-of-type{
+    margin-top: 30px;
+}
+.terrorFull section > *{
+    margin: 8px 0px;
+}
+.terrorFull .botao{
+    border: 2px solid rgb(48, 48, 48);
+    background-color: black;
+}
+.terrorFull .botao:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+}
+.romanceFull{
+    background-color: rgb(114, 4, 4);
+    margin:0;
+    background-image: url(romance.png);
+    background-size: 150%;
+}
+.romanceFull h1{
+    font-size: xx-large;
+    font-weight: 100;
+}
+.romanceFull p {
+    padding: 10px 10px;
+    text-align: justify;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.romanceFull section{
+    margin: 20px 15px;
+    margin-top: 0;
+}
+.romanceFull section:first-of-type{
+    margin-top: 30px;
+}
+.romanceFull section > *{
+    margin: 8px 0px;
+}
+.romanceFull .botao{
+    border: 2px solid rgb(50, 0, 0);
+    background-color: rgb(114, 4, 4);
+}
+.romanceFull .botao:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(114, 4, 4);
+}
+.fantasiaFull{
+    background-color: rgb(30, 85, 22);
+    margin:0;
+    background-image: url(fantasia.png);
+    background-size: 100%;
+    background-position: center;
+}
+.fantasiaFull h1{
+    font-size: xx-large;
+    font-weight: 100;
+}
+.fantasiaFull p {
+    padding: 10px 10px;
+    text-align: justify;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.fantasiaFull section{
+    margin: 20px 15px;
+    margin-top: 0;
+}
+.fantasiaFull section:first-of-type{
+    margin-top: 30px;
+}
+.fantasiaFull section > *{
+    margin: 8px 0px;
+}
+.fantasiaFull .botao{
+    border: 2px solid rgb(13, 34, 10);
+    background-color: rgb(30, 85, 22);
+}
+.fantasiaFull .botao:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(30, 85, 22);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-VariableFont_wght.ttf);
+}
